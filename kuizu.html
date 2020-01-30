@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<script src="components/loader.js"></script>
+	<link rel="stylesheet" href="components/loader.css">
+	<script src="./kamecount.js"></script>
+	<script src="./sakanacount.js"></script>
+	<script src="./irukacount.js"></script>
+	<script src="./jugoncount.js"></script>
+	<script src="./samecount.js"></script>
+	<!-- <link rel="stylesheet" href="css/kitanai.css"> -->
+	<script>
+		var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kuizu.css";
+
+  head.appendChild(linkElement);
+	</script>
+</head>
+
+<body>
+
+	<h2>これから○×クイズを５もん</br>しゅつだいするよ！</h2>
+	<h3>クイズに正解（せいかい）して、</br>きたないうみからどうぶつたちをたすけてあげよう！</h3>
+
+	<button type="submit" class="btn1" onClick="kame1()">「うみがめ」をたすける </button> 
+    <button type="submit" class="btn2" onClick="sakana1()">「さかな」をたすける</button>
+	<button type="submit" class="btn3"  onClick="iruka1()">「いるか」をたすける</button>
+	<button type="submit" class="btn4" onClick="jugon1()">「じゅごん」をたすける</button>
+	<button type="submit" class="btn5" onClick="same1()">「じんべえさめ」をたすける</button>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

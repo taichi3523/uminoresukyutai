@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+  
+    <script src="components/loader.js"></script>
+     <script src="./count.js"></script>
+ 
+</head>
+<body>
+<h1>せいかい！</h1>
+    <h2>マイバックを使う（つかう）とレジぶくろのごみが減る（へる）ね！</br>お気に入り（おきにいり）のバッグでお買い物（おかいもの）に行こう（いこう）！</h2>
+     <button type="submit" class="seikai"  onClick="location.href='iruka2.html'" value="○">つぎのもんだい</button>
+
+   <script>
+   		num = localStorage.getItem('access_count');
+        num = window.localStorage.getItem('access_count');
+        num = localStorage.access_count;
+        // var sample = document.getElementById("sample");
+        // sample.innerHTML = num;
+
+        if(num==0){
+
+　var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/iruka1.css";
+
+  head.appendChild(linkElement);
+    }
+
+        else if (num==1) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/iruka2.css";
+
+  head.appendChild(linkElement);
+ }
+     else if (num==2) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/iruka3.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==3) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/iruka4.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==4) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/iruka5.css";
+
+  head.appendChild(linkElement);
+     }
+        else {
+             var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/iruka6.css";
+
+  head.appendChild(linkElement);
+ }
+    </script>
+</body>
+</html>
+
+

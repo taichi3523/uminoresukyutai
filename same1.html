@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+     <script src="./samecount.js"></script>
+    <!-- <link rel="stylesheet" href="css/kitanai.css"> -->
+
+ 
+</head>
+<body>
+  <h1>だい１もん！</h1>
+      <h2>ものをすてずになんども使う（つかう）ことを、『リユース』という。〇？×？</h2>
+     
+      
+            <div id="maru1">
+	<button type="submit" class="maru" 　 onClick="hantei1()"  value="×">○</button>
+    
+       </div>
+           <div id="batsu1">
+        <button type="submit" class="batsu"　 onClick="location.href='samebatsu1.html'" value="×">×</button>
+        </div>
+    <button type="submit" class="modoru" onclick="modoru()">さいしょにもどる</button>
+    <script>
+    		num = localStorage.getItem('access_count');
+        num = window.localStorage.getItem('access_count');
+        num = localStorage.access_count;
+        // var sample = document.getElementById("sample");
+        // sample.innerHTML = num;
+
+        if(num==0){
+
+　var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/same1.css";
+
+  head.appendChild(linkElement);
+    }
+
+        else if (num==1) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/same2.css";
+
+  head.appendChild(linkElement);
+ }
+     else if (num==2) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/same3.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==3) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/same4.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==4) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/same5.css";
+
+  head.appendChild(linkElement);
+     }
+        else {
+             var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/same6.css";
+
+  head.appendChild(linkElement);
+ }
+ </script>
+        </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+
+    <script src="components/loader.js"></script>
+
+</head>
+<body>
+    <h1>ざんねん！</h1>
+         <h2>毎年（まいとし）たくさんのプラスチックが海（うみ）に流れ（ながれ）てしまっているよ。</br>海（うみ）のなかまたちがくらしづらくなってとてもこまっているんだ</h2>
+     <button type="submit" class="tsugi"  onClick="location.href='jugon4.html'" value="○">つぎのもんだい</button>
+         <script>
+       		num = localStorage.getItem('access_count');
+        num = window.localStorage.getItem('access_count');
+        num = localStorage.access_count;
+        // var sample = document.getElementById("sample");
+        // sample.innerHTML = num;
+
+        if(num==0){
+
+　var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/jugon1.css";
+
+  head.appendChild(linkElement);
+    }
+
+        else if (num==1) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/jugon2.css";
+
+  head.appendChild(linkElement);
+ }
+     else if (num==2) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/jugon3.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==3) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/jugon4.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==4) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/jugon5.css";
+
+  head.appendChild(linkElement);
+     }
+        else {
+             var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/jugon6.css";
+
+  head.appendChild(linkElement);
+ }
+    </script>
+    <!-- TODO: Please edit here -->
+</body>
+</html>
+
+

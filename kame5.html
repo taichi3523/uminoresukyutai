@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+	<link rel="stylesheet" href="components/loader.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<script src="components/loader.js"></script>
+	<script src="./kamecount.js"></script>
+
+</head>
+
+<body>
+	<h1>だい５もん！</h1>
+	<h2>駿河湾（するがわん）は日本（にほん）でいちばん深い（ふかい）湾（わん）である。〇？×？</h2>
+	<div id="maru1">
+		<button type="submit" class="maru" onClick="hantei5()" value="○">○</button>
+	</div>
+	<div id="batsu1">
+		<button type="submit" class="batsu" 　 onClick="location.href='kamebatsu5.html'" value="×">×</button>
+	</div>
+    <button type="submit" class="modoru" onclick="modoru()">さいしょにもどる</button>
+	<script>
+   		 		num = localStorage.getItem('access_count');
+        num = window.localStorage.getItem('access_count');
+        num = localStorage.access_count;
+        // var sample = document.getElementById("sample");
+        // sample.innerHTML = num;
+
+        if(num==0){
+
+　var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kame1.css";
+
+  head.appendChild(linkElement);
+    }
+
+        else if (num==1) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kame2.css";
+
+  head.appendChild(linkElement);
+ }
+     else if (num==2) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kame3.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==3) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kame4.css";
+
+  head.appendChild(linkElement);
+     }
+
+  else if (num==4) {　
+  var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kame5.css";
+
+  head.appendChild(linkElement);
+     }
+        else {
+             var head = document.head;
+  var linkElement = document.createElement("link");
+
+  linkElement.type = "text/css";
+  linkElement.rel = "stylesheet";
+  linkElement.href = "./css/kame6.css";
+
+  head.appendChild(linkElement);
+ }
+	</script>
+</body>
+
+</html>

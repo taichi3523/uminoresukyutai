@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/same6.css">
+    <script src="components/loader.js"></script>
+    <script src="./samecount.js"></script>
+
+</head>
+<body>
+    <h1>けっかはっぴょう！</h1>
+         
+     <!-- <button type="submit" class="seikaisu"  onClick="seikai() "value="○">正解数</button> -->
+      
+     
+
+
+</body>
+ <div id = "seikaisu">
+  <script>
+     
+
+        num = localStorage.getItem('access_count');
+        num = window.localStorage.getItem('access_count');
+        num = localStorage.access_count;
+
+
+　document.write(　num + 'もんせいかいしたよ！');
+        localStorage.setItem('access_count', num);
+        num = localStorage.getItem('access_count');
+        num = window.localStorage.getItem('access_count');
+        num = localStorage.access_count;
+        window.localStorage.setItem('access_count', num);
+        localStorage.access_count = Number(num) + 0;
+
+    </script>
+</div>
+    <body>
+    
+         
+     <!-- <button type="submit" class="seikaisu"  onClick="seikai() "value="○">正解数</button> -->
+      
+      <h2>たすけてくれてありがとう！</h2>
+     <button type="submit" class="modoru" onclick="modoru()">さいしょにもどる</button>
+
+</body>
+</html>
+
